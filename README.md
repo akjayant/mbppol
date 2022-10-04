@@ -1,5 +1,5 @@
 # MBPPO-Lagrangian
-This repository has code for the paper "Model-based Safe Deep Reinforcement Learning via a Constrained Proximal Policy Optimization Algorithm" accepted at NeurIPS 2022.
+This repository contains code for the paper "Model-based Safe Deep Reinforcement Learning via a Constrained Proximal Policy Optimization Algorithm" accepted at NeurIPS 2022.
 
 README
 
@@ -22,9 +22,10 @@ README
             i) cd src
             ii) python3  mbppo_lagrangian.py –exp_name=”experiment_name” –seed=0 –env=”<environment_name>” –beta=0.02
 
-Where environment names are [Safexp-PointGoal2-v0,Safexp-CarGoal2-v0]
+	Where environment names are [Safexp-PointGoal2-v0,Safexp-CarGoal2-v0]
 
     5) Use https://github.com/openai/safety-starter-agents/blob/master/scripts/plot.py for plotting -  
-python plot.py –logdir=’<path to data>’’ --value=<plot_choice>
-Where plot_choice are ‘AverageEpRet’ for reward performance, ‘AverageEpCost’ for cost performance.  
+	a) python plot.py –logdir=’<path to data>’’ --value=<plot_choice>
+	
+	Where plot_choice are ‘AverageEpRet’ for reward performance, ‘AverageEpCost’ for cost performance.  
 
