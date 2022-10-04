@@ -1,10 +1,7 @@
 # MBPPO-Lagrangian
 This repository contains code for the paper "Model-based Safe Deep Reinforcement Learning via a Constrained Proximal Policy Optimization Algorithm" accepted at NeurIPS 2022.
 
-README
 
-
-*Make sure you are signed in.
 
     1) Requirements - 
         a) Python 3.7+
