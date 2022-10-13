@@ -119,7 +119,7 @@ class SafetyGymEnv():
 
         for k in range(self.config.action_repeat):
             control = action
-            state, reward_k, done, info = self.env.step(control,haz1=[],haz2=[])
+            state, reward_k, done, info = self.env.step(control)#,haz1=[],haz2=[])
             #cost_cont = info['cont_cost']
             if self.config.use_dist_reward:
                 reward_k = self.get_dist_reward()
