@@ -549,8 +549,7 @@ def ppo(env_fn,cost_limit, actor_critic=core.MLPActorCritic, ac_kwargs=dict(), s
                 pep_ret,pep_cost  = 0,0
                 ep_cost = 0
 
-        # torch.save(XC,"xc.pkl")
-        # torch.save(YC,"yc.pkl")
+
 
         # Perform PPO update!
         #------------------------train dynamics--------------------------
@@ -566,9 +565,8 @@ def ppo(env_fn,cost_limit, actor_critic=core.MLPActorCritic, ac_kwargs=dict(), s
         model_type = 'pytorch'
         #predict_env2 = PredictEnv(env_model2, env_name, model_type)
         #-------------------------
-        print("processes checkpoint",proc_id())
-        MEGATRAIN = 3
-        print("megatrain epoch")
+
+
 
         megaiter = 0
         perf_flag=True
@@ -659,6 +657,7 @@ def ppo(env_fn,cost_limit, actor_critic=core.MLPActorCritic, ac_kwargs=dict(), s
                 old_params_v = get_param_values(ac.v)
                 old_params_vc = get_param_values(ac.vc)
                 update(log_std_decay)
+                # 6 ELITE MODELS OUT OF 8
                 valid_rets = [0]*6
                 winner=0
                 print("validating............")
@@ -668,9 +667,6 @@ def ppo(env_fn,cost_limit, actor_critic=core.MLPActorCritic, ac_kwargs=dict(), s
                     hazards_posv = staticv['hazards']
                     ldv = dist_xy(o[40:],goal_posv)
                     for step_iter in range(75):
-
-                        #------------------------------ROBOT MATRIX used to generate hazard lidar---------------
-                        #generate hazard lidar
                         obs_vecv = generate_lidar(ov,hazards_posv)
                         robot_posv = ov[40:]
                         obs_vecv = np.array(obs_vecv)
@@ -692,7 +688,7 @@ def ppo(env_fn,cost_limit, actor_critic=core.MLPActorCritic, ac_kwargs=dict(), s
                 print(valid_rets,last_valid_rets)
                 performance_ratio = winner/6
                 print("Performance ratio=",performance_ratio)
-                thresh = 4/6
+                thresh = 4/6  #BETTER THAN 50%
                 if performance_ratio < thresh :
                     perf_flag = False
                     print("backtracking.........")
