@@ -13,7 +13,7 @@ This repository contains code for the paper "Model-based Safe Deep Reinforcement
     3) Install Safety Gym using https://github.com/openai/safety-gym
     4) For reproducing results (upto same extent because of seed randomness) -
         a) Take backup of  /…/safety-gym/safety_gym/envs/suite.py 
-        b) Copy ./src/env_suite_file/suite.py to above path.
+        b) Copy ./src/env_suite_file/suite.py to above path. This removes "Vases" and increases "Hazards" from 10 to 15.
         c) Change ‘num_steps’ = 750’ in ‘DEFAULT’ dict of class Engine in  /…/safety-gym/safety_gym/envs/engine.py 
         d) Run for 8 random seeds :
             i) cd src
