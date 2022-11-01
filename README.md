@@ -26,3 +26,13 @@ This repository contains code for the paper "[Model-based Safe Deep Reinforcemen
 	
 	Where plot_choice are ‘AverageEpRet’ for reward performance, ‘AverageEpCost’ for cost performance.  
 
+If you are using this in your work, please cite using :
+@inproceedings{
+jayant2022modelbased,
+title={Model-based Safe Deep Reinforcement Learning via a Constrained Proximal Policy Optimization Algorithm},
+author={Ashish Kumar Jayant and Shalabh Bhatnagar},
+booktitle={Advances in Neural Information Processing Systems},
+editor={Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
+year={2022},
+url={https://openreview.net/forum?id=hYa_lseXK8}
+}
