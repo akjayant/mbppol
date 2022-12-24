@@ -34,5 +34,5 @@ author={Ashish Kumar Jayant and Shalabh Bhatnagar},
 booktitle={Advances in Neural Information Processing Systems},
 editor={Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
 year={2022},
-url={https://openreview.net/forum?id=hYa_lseXK8}
+url={ https://openreview.net/forum?id=hYa_lseXK8 }
 }
