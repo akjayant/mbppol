@@ -1,5 +1,5 @@
 # MBPPO-Lagrangian
-This repository contains code for the paper "[Model-based Safe Deep Reinforcement Learning via a Constrained Proximal Policy Optimization Algorithm](https://arxiv.org/abs/2210.07573)" accepted at NeurIPS 2022. Read paper [here](https://arxiv.org/abs/2210.07573).
+This repository contains code for the paper "[Model-based Safe Deep Reinforcement Learning via a Constrained Proximal Policy Optimization Algorithm](https://arxiv.org/abs/2210.07573)" accepted at NeurIPS 2022. Read paper [here](https://proceedings.neurips.cc/paper_files/paper/2022/file/9a8eb202c060b7d81f5889631cbcd47e-Paper-Conference.pdf).
 
 
 
@@ -27,12 +27,14 @@ This repository contains code for the paper "[Model-based Safe Deep Reinforcemen
 	Where plot_choice are ‘AverageEpRet’ for reward performance, ‘AverageEpCost’ for cost performance.  
 
 If you are using this in your work, please cite using :
-@inproceedings{
-jayant2022modelbased,
-title={Model-based Safe Deep Reinforcement Learning via a Constrained Proximal Policy Optimization Algorithm},
-author={Ashish Kumar Jayant and Shalabh Bhatnagar},
-booktitle={Advances in Neural Information Processing Systems},
-editor={Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
-year={2022},
-url={ https://openreview.net/forum?id=hYa_lseXK8 }
+@inproceedings{NEURIPS2022_9a8eb202,
+ author = {Jayant, Ashish K and Bhatnagar, Shalabh},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},
+ pages = {24432--24445},
+ publisher = {Curran Associates, Inc.},
+ title = {Model-based Safe Deep Reinforcement Learning via a Constrained Proximal Policy Optimization Algorithm},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2022/file/9a8eb202c060b7d81f5889631cbcd47e-Paper-Conference.pdf},
+ volume = {35},
+ year = {2022}
 }
